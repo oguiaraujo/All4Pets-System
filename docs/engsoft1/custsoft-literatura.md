@@ -98,3 +98,66 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
 - Avaliação de produtividade  
 
 **No Brasil, a APF é obrigatória em contratações públicas de desenvolvimento de software.**  
+
+<h2>Principais Pontos dos Trabalhos Acadêmicos</h2>
+
+# Teses e Dissertações  
+
+## Melhoria Na Consistência da Contagem de Pontos de Função  
+- **Autor:** (Informação não disponível na fonte)  
+- **Fonte:** Dissertação de Mestrado, Universidade de São Paulo (USP)  
+- **Link:** [Acessar PDF](https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf)  
+- **Pontos Principais:**  
+  - Aborda a Análise por Pontos de Função (APF) e a crítica sobre a falta de confiabilidade entre diferentes contadores.  
+  - Propõe uma ferramenta para melhorar a consistência da medição.  
+  - Destaca que a APF é obrigatória em contratações públicas de software no Brasil.  
+
+## Aplicando Aprendizado de Máquina para Estimativa de Esforço no Desenvolvimento de Software  
+- **Autor:** Weldson Amaral Corrêa  
+- **Fonte:** Dissertação de Mestrado, Universidade Federal do Maranhão (UFMA)  
+- **Link:** [Acessar PDF](https://tedebc.ufma.br/jspui/handle/tede/3289)  
+- **Pontos Principais:**  
+  - Investiga como algoritmos de Aprendizado de Máquina (AM) podem auxiliar na estimativa de esforço de software.  
+  - Utiliza bases de dados de projetos concluídos para gerar estimativas mais precisas.  
+  - Demonstra que a metodologia proposta é consistente em diferentes conjuntos de dados.  
+
+---
+
+# Artigos Científicos e Manuais  
+
+## Manual do Modelo COCOMO II  
+- **Fonte:** Manual técnico da Rose-Hulman Institute of Technology  
+- **Link:** [Acessar PDF](https://www.rose-hulman.edu/class/cs/csse372/201310/Homework/CII_modelman2000.pdf)  
+- **Pontos Principais:**  
+  - Detalha o modelo COCOMO II, que utiliza equações para estimar esforço e tempo de desenvolvimento.  
+  - Explica os "fatores de escala", que representam economias e deseconomias de escala.  
+  - Descreve o cálculo do tamanho do software a partir de código novo e reutilizado.  
+
+## Methods for Estimating Agile Software Projects: A Systematic Review  
+- **Autor:** (Informação não disponível na fonte)  
+- **Fonte:** Artigo científico  
+- **Link:** [Acessar PDF](https://www.researchgate.net/profile/Ed-Canedo/publication/328688948_Methods-for-Estimating-Agile-Software-Projects_A_Systematic_Review/links/5bf13fa0a6fdcc3a8ddf2a96/Methods-for-Estimating-Agile-Software-Projects-A-Systematic-Review.pdf)  
+- **Pontos Principais:**  
+  - Revisão sistemática sobre estimativas em projetos ágeis.  
+  - Identifica o *Planning Poker* como técnica mais popular.  
+  - Story Points e Pontos de Função são as métricas mais usadas.  
+  - Ressalta que métricas tradicionais ainda são usadas em gestão de portfólio e benchmarking.  
+
+## Evaluation of the Cost Estimation Models: Case Study of Task Manager Application  
+- **Autor:** (Informação não disponível na fonte)  
+- **Fonte:** Artigo científico  
+- **Link:** [Acessar PDF](https://www.researchgate.net/publication/276232068_Evaluation_of_the_Cost_Estimation_Models_Case_Study_of_Task_Manager_Application)  
+- **Pontos Principais:**  
+  - Estudo de caso que avalia a precisão dos modelos COCOMO I e II.  
+  - O modelo *Application Composition* do COCOMO II foi o mais preciso.  
+  - Mostrou melhor desempenho para estimar tempo e custo em projeto de gerenciamento de tarefas.  
+
+## The IFPUG Function Point Counting Method  
+- **Autor:** (Informação não disponível na fonte)  
+- **Fonte:** Artigo científico  
+- **Link:** [Acessar PDF](https://www.researchgate.net/publication/314391334_The_IFPUG_Function_Point_Counting_Method)  
+- **Pontos Principais:**  
+  - Detalha os objetivos e áreas de aplicação da Análise por Pontos de Função (APF).  
+  - Descreve a APF como medida de tamanho funcional sob a perspectiva do usuário.  
+  - Método independente da tecnologia.  
+  - Pode ser usado em estimativas de custo, gestão de projetos e análise de produtividade.  
