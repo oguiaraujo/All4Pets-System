@@ -1,21 +1,21 @@
-<h2>Análise de Trabalhos Acadêmicos</h2>
+# Análise de Trabalhos Acadêmicos
 
-# Fatores que Impactam o Custo de um Projeto de Software
+## Fatores que Impactam o Custo de um Projeto de Software
 
 O custo de um projeto de software é influenciado por uma rede complexa de fatores.  
 As estimativas devem considerar diversas variáveis, agrupadas em quatro categorias principais:
 
-## Atributos do Produto
+### Atributos do Produto
 - Complexidade do software  
 - Tamanho do banco de dados da aplicação  
 - Nível de confiabilidade e segurança exigidos  
 
-## Atributos de Hardware
+### Atributos de Hardware
 - Restrições de desempenho  
 - Restrições de memória  
 - Volatilidade do ambiente de máquina virtual  
 
-## Atributos de Pessoal
+### Atributos de Pessoal
 - Experiência de analistas e engenheiros  
 - Familiaridade com a linguagem de programação  
 - Conhecimento do ambiente de aplicação  
@@ -24,14 +24,14 @@ As estimativas devem considerar diversas variáveis, agrupadas em quatro categor
 
 A ausência de dados históricos ou de julgamento qualificado pode resultar em estimativas imprecisas.  
 
-## Atributos do Projeto
+### Atributos do Projeto
 - Uso de ferramentas de software  
 - Métodos de engenharia de software aplicados  
 - Cronograma de desenvolvimento exigido  
 
 ---
 
-## Deseconomias de Escala
+### Deseconomias de Escala
 Em projetos maiores, o esforço de desenvolvimento tende a aumentar mais que o dobro quando o tamanho do projeto dobra.  
 Causas principais:  
 - Sobrecarga de comunicação entre membros da equipe  
@@ -39,7 +39,7 @@ Causas principais:
 
 ---
 
-# Modelos de Estimativa de Custo
+## Modelos de Estimativa de Custo
 
 Existem diversas abordagens, mas duas das mais proeminentes na engenharia de software são:  
 1. **COCOMO (Constructive Cost Model)**  
@@ -47,7 +47,7 @@ Existem diversas abordagens, mas duas das mais proeminentes na engenharia de sof
 
 ---
 
-## 1. COCOMO (Constructive Cost Model)
+### 1. COCOMO (Constructive Cost Model)
 
 O **COCOMO** é um modelo **empírico** de estimativa de custo de software, desenvolvido por **Barry W. Boehm**.  
 
@@ -99,11 +99,11 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
 
 **No Brasil, a APF é obrigatória em contratações públicas de desenvolvimento de software.**  
 
-<h2>Principais Pontos dos Trabalhos Acadêmicos</h2>
+# Principais Pontos dos Trabalhos Acadêmicos
 
-# Teses e Dissertações  
+## Teses e Dissertações  
 
-## Melhoria Na Consistência da Contagem de Pontos de Função  
+### Melhoria Na Consistência da Contagem de Pontos de Função  
 - **Autor:** (Informação não disponível na fonte)  
 - **Fonte:** Dissertação de Mestrado, Universidade de São Paulo (USP)  
 - **Link:** [Acessar PDF](https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf)  
@@ -112,7 +112,7 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - Propõe uma ferramenta para melhorar a consistência da medição.  
   - Destaca que a APF é obrigatória em contratações públicas de software no Brasil.  
 
-## Aplicando Aprendizado de Máquina para Estimativa de Esforço no Desenvolvimento de Software  
+### Aplicando Aprendizado de Máquina para Estimativa de Esforço no Desenvolvimento de Software  
 - **Autor:** Weldson Amaral Corrêa  
 - **Fonte:** Dissertação de Mestrado, Universidade Federal do Maranhão (UFMA)  
 - **Link:** [Acessar PDF](https://tedebc.ufma.br/jspui/handle/tede/3289)  
@@ -123,9 +123,9 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
 
 ---
 
-# Artigos Científicos e Manuais  
+## Artigos Científicos e Manuais  
 
-## Manual do Modelo COCOMO II  
+### Manual do Modelo COCOMO II  
 - **Fonte:** Manual técnico da Rose-Hulman Institute of Technology  
 - **Link:** [Acessar PDF](https://www.rose-hulman.edu/class/cs/csse372/201310/Homework/CII_modelman2000.pdf)  
 - **Pontos Principais:**  
@@ -133,7 +133,7 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - Explica os "fatores de escala", que representam economias e deseconomias de escala.  
   - Descreve o cálculo do tamanho do software a partir de código novo e reutilizado.  
 
-## Methods for Estimating Agile Software Projects: A Systematic Review  
+### Methods for Estimating Agile Software Projects: A Systematic Review  
 - **Autor:** (Informação não disponível na fonte)  
 - **Fonte:** Artigo científico  
 - **Link:** [Acessar PDF](https://www.researchgate.net/profile/Ed-Canedo/publication/328688948_Methods-for-Estimating-Agile-Software-Projects_A_Systematic_Review/links/5bf13fa0a6fdcc3a8ddf2a96/Methods-for-Estimating-Agile-Software-Projects-A-Systematic-Review.pdf)  
@@ -143,7 +143,7 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - Story Points e Pontos de Função são as métricas mais usadas.  
   - Ressalta que métricas tradicionais ainda são usadas em gestão de portfólio e benchmarking.  
 
-## Evaluation of the Cost Estimation Models: Case Study of Task Manager Application  
+### Evaluation of the Cost Estimation Models: Case Study of Task Manager Application  
 - **Autor:** (Informação não disponível na fonte)  
 - **Fonte:** Artigo científico  
 - **Link:** [Acessar PDF](https://www.researchgate.net/publication/276232068_Evaluation_of_the_Cost_Estimation_Models_Case_Study_of_Task_Manager_Application)  
@@ -152,7 +152,7 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - O modelo *Application Composition* do COCOMO II foi o mais preciso.  
   - Mostrou melhor desempenho para estimar tempo e custo em projeto de gerenciamento de tarefas.  
 
-## The IFPUG Function Point Counting Method  
+### The IFPUG Function Point Counting Method  
 - **Autor:** (Informação não disponível na fonte)  
 - **Fonte:** Artigo científico  
 - **Link:** [Acessar PDF](https://www.researchgate.net/publication/314391334_The_IFPUG_Function_Point_Counting_Method)  
@@ -162,9 +162,7 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - Método independente da tecnologia.  
   - Pode ser usado em estimativas de custo, gestão de projetos e análise de produtividade.  
 
-<h2> Referências</h2>
-
-# Referências
+ # Referências
 
 - **UNIVERSIDADE DE SÃO PAULO (USP).** Melhoria Na Consistência da Contagem de Pontos de Função. 2015. Dissertação (Mestrado em Ciências) – Escola de Artes, Ciências e Humanidades, Universidade de São Paulo, São Paulo, 2015. Disponível em: [https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf](https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf). Acesso em: [data de acesso].
 
