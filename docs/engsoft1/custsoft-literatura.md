@@ -161,3 +161,17 @@ A **APF** é uma metodologia que mede o **tamanho funcional do software** (a fun
   - Descreve a APF como medida de tamanho funcional sob a perspectiva do usuário.  
   - Método independente da tecnologia.  
   - Pode ser usado em estimativas de custo, gestão de projetos e análise de produtividade.  
+
+<h2> Referências</h2>
+
+# Referências
+
+- **UNIVERSIDADE DE SÃO PAULO (USP).** Melhoria Na Consistência da Contagem de Pontos de Função. 2015. Dissertação (Mestrado em Ciências) – Escola de Artes, Ciências e Humanidades, Universidade de São Paulo, São Paulo, 2015. Disponível em: [https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf](https://teses.usp.br/teses/disponiveis/100/100131/tde-02022016-012253/publico/MelhoriaNaConsistenciaContagemAPF.pdf). Acesso em: [data de acesso].
+
+- **CORRÊA, Weldson Amaral.** Aplicando Aprendizado de Máquina para Estimativa de Esforço no Desenvolvimento de Software. 2018. Dissertação (Mestrado em Ciência da Computação) – Universidade Federal do Maranhão, São Luís, 2018. Disponível em: [https://tedebc.ufma.br/jspui/handle/tede/3289](https://tedebc.ufma.br/jspui/handle/tede/3289). Acesso em: [data de acesso].
+
+- **CANEDO, E. et al.** Methods for Estimating Agile Software Projects: A Systematic Review. 2018. Artigo científico. Disponível em: [https://www.researchgate.net/profile/Ed-Canedo/publication/328688948_Methods-for-Estimating-Agile-Software-Projects_A_Systematic_Review/links/5bf13fa0a6fdcc3a8ddf2a96/Methods-for-Estimating-Agile-Software-Projects-A-Systematic-Review.pdf](https://www.researchgate.net/profile/Ed-Canedo/publication/328688948_Methods-for-Estimating-Agile-Software-Projects_A_Systematic_Review/links/5bf13fa0a6fdcc3a8ddf2a96/Methods-for-Estimating-Agile-Software-Projects-A-Systematic-Review.pdf). Acesso em: [data de acesso].
+
+- **EVALUATION of the Cost Estimation Models: Case Study of Task Manager Application.** 2015. Artigo científico. Disponível em: [https://www.researchgate.net/publication/276232068_Evaluation_of_the_Cost_Estimation_Models_Case_Study_of_Task_Manager_Application](https://www.researchgate.net/publication/276232068_Evaluation_of_the_Cost_Estimation_Models_Case_Study_of_Task_Manager_Application). Acesso em: [data de acesso].
+
+- **THE IFPUG Function Point Counting Method.** 2017. Artigo científico. Disponível em: [https://www.researchgate.net/publication/314391334_The_IFPUG_Function_Point_Counting_Method](https://www.researchgate.net/publication/314391334_The_IFPUG_Function_Point_Counting_Method). Acesso em: [data de acesso].
