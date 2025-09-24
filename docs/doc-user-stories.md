@@ -82,3 +82,90 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 </table>
 
 ---
+### User Story US01 - Manter Cliente
+
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US01</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Permitir o gerenciamento completo do cadastro de clientes (criação, consulta, atualização e desativação).</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US01 - Manter Cliente</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">Como <em>Administrador, Funcionário ou Cliente</em>, quero <em>gerenciar o cadastro de cliente (criar, consultar, atualizar e desativar)</em>, para <em>que possamos manter as informações de contato atualizadas para agendamentos, vendas e comunicação</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF01.01, RF01.02, RF01.03, RF01.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir o cadastro de um novo cliente com Nome, CPF, Telefone e E-mail.</li>
+        <li>O sistema não deve permitir o cadastro de um cliente com um CPF já existente.</li>
+        <li>O sistema deve exibir uma mensagem de sucesso após o cadastro/atualização de um cliente.</li>
+        <li>O sistema deve validar que os campos obrigatórios (Nome, CPF, Telefone, E-mail) foram preenchidos.</li>
+        <li>O sistema deve permitir a busca de clientes por Nome ou CPF.</li>
+        <li>O sistema deve permitir a desativação de um cliente, que não deve mais aparecer nas buscas principais.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>TA01.01:</strong> Cadastrar um novo cliente com dados válidos e verificar se ele é salvo e uma mensagem de sucesso é exibida.</li>
+        <li><strong>TA01.02:</strong> Tentar cadastrar um cliente sem preencher o campo 'Nome' e verificar se uma mensagem de erro é exibida.</li>
+        <li><strong>TA01.03:</strong> Tentar cadastrar um cliente com um CPF já existente e verificar se o sistema impede a duplicidade.</li>
+        <li><strong>TA01.04:</strong> Acessar a listagem de clientes e buscar por um cliente específico pelo nome.</li>
+        <li><strong>TA01.05:</strong> Selecionar um cliente, editar seu número de telefone, salvar e verificar se a alteração foi persistida.</li>
+        <li><strong>TA01.06:</strong> Desativar um cliente, confirmar a ação e verificar se ele não aparece mais na listagem principal de clientes.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12 Horas</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">6 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Guilherme</li>
+        <li><strong>Desenvolvedor:</strong> Guilherme</li>
+        <li><strong>Revisor:</strong> Kaio</li>
+        <li><strong>Testador:</strong> Samuel</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+      
+    </td>
+  </tr>
+</table>
+
+---
+
