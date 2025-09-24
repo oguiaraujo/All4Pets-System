@@ -99,8 +99,8 @@ A autenticação controla o acesso seguro ao sistema.
 
 Requisito | Descrição | Ator |
 --------- | ----------- | ---------- |
-RF08.01 - Login de Usuário | Realiza login no sistema informando credenciais (e-mail e senha). | Funcionário, Cliente |
-RF08.02 - Logout de Usuário | Realiza logout, encerrando a sessão do usuário de forma segura. | Funcionário, Cliente |
+RF08.01 - Login de Usuário | Realiza login no sistema informando credenciais (e-mail e senha). | Administrador, Funcionário, Cliente |
+RF08.02 - Logout de Usuário | Realiza logout, encerrando a sessão do usuário de forma segura. | Administrador, Funcionário, Cliente |
 
 ---
 
