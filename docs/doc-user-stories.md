@@ -252,3 +252,88 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 </table>
 
 ---
+
+### User Story US08 - Autenticação de Usuário
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US08</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Permitir que usuários acessem o sistema de forma segura e encerrem suas sessões.</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US08 - Autenticação de Usuário</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">Como <em>um Usuário cadastrado (Administrador, Funcionário ou Cliente)</em>, quero <em>acessar o sistema de forma segura informando minhas credenciais</em>, para <em>que eu possa ter acesso às funcionalidades correspondentes ao meu perfil e proteger minhas informações</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF08.01, RF08.02</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve fornecer uma tela de login com campos para e-mail e senha.</li>
+        <li>Ao submeter credenciais válidas, o usuário deve ser autenticado e redirecionado para sua página inicial correspondente.</li>
+        <li>Ao submeter credenciais inválidas, o sistema deve exibir uma mensagem de erro clara, sem especificar se o erro foi no e-mail ou na senha.</li>
+        <li>Páginas restritas do sistema não devem ser acessíveis por usuários não autenticados.</li>
+        <li>Um usuário autenticado deve ter acesso a um botão/link para "Sair" (Logout).</li>
+<li>Ao fazer logout, a sessão do usuário deve ser encerrada e ele deve ser redirecionado para a página de login.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>TA08.01:</strong> Informar um e-mail e senha válidos e verificar se o login é bem-sucedido e o usuário é redirecionado para a página principal do seu perfil.</li>
+        <li><strong>TA08.02:</strong> Informar um e-mail válido com uma senha incorreta e verificar se a mensagem "E-mail ou senha inválidos" é exibida.</li>
+        <li><strong>TA08.03:</strong> Tentar acessar uma URL protegida (ex: /dashboard) sem estar logado e verificar se o sistema redireciona para a página de login.</li>
+        <li><strong>TA08.04:</strong> Realizar o login, clicar no botão "Sair" e verificar se o usuário é deslogado e redirecionado para a página de login.</li>
+        <li><strong>TA08.05:</strong> Após fazer logout, tentar usar o botão "Voltar" do navegador para acessar uma página interna e verificar se o acesso é bloqueado.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">6 Horas</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">3 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Guilherme</li>
+        <li><strong>Desenvolvedor:</strong> Guilherme</li>
+        <li><strong>Revisor:</strong> Samuel</li>
+        <li><strong>Testador:</strong> Kaio</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+      
+    </td>
+  </tr>
+</table>
+
+---
