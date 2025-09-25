@@ -476,7 +476,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
   </tr>
   <tr>
     <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
-    <td style="padding:6px;">13 PF</td>
+    <td style="padding:6px;">5 PF</td>
   </tr>
   <tr>
     <td style="padding:6px;"><strong>Prioridade</strong></td>
