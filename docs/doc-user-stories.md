@@ -501,3 +501,83 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 </table>
 
 -----
+
+### User Story US09 - Gerar Relatórios
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US09</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Gerar relatórios financeiros e de gestão</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US09 - Gerar Relatórios</td>
+    </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">
+      Como <em>Administrador</em>, quero <em>gerar relatórios financeiros e de gestão</em>, para <em>tomar decisões estratégicas e acompanhar a saúde financeira do negócio</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF09.01, RF09.02, RF09.03, RF09.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir a geração de relatórios de vendas por período.</li>
+        <li>O sistema deve permitir a geração de relatórios de estoque.</li>
+        <li>O sistema deve permitir a geração de relatórios de agendamentos.</li>
+        <li>Os relatórios devem ser exportáveis para formatos como PDF ou planilha.</li>
+        <li>O sistema deve exibir gráficos e tabelas para facilitar a visualização dos dados.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>TA09.01 - Gerar um relatório de vendas do último mês e verificar os totais.</li>
+        <li>TA09.02 - Gerar um relatório de estoque para identificar produtos com baixa quantidade.</li>
+        <li>TA09.03 - Exportar um relatório de agendamentos em formato PDF.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12h</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">12 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Importante</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Kaio</li>
+        <li><strong>Desenvolvedor:</strong> Kaio</li>
+        <li><strong>Revisor:</strong> Samuel</li>
+        <li><strong>Testador:</strong> Guilherme</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
