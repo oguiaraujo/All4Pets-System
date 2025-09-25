@@ -337,3 +337,86 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 </table>
 
 ---
+
+### User Story US04 - Manter Produto
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US04</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Gerenciar produtos e estoque</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US04 - Gerenciar Produtos</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">
+      Como <em>Funcionário ou Administrador</em>, quero <em>cadastrar, editar e remover produtos no estoque</em>, para <em>manter o controle do inventário e evitar a falta de itens essenciais</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF04.01, RF04.02, RF04.03, RF04.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir o cadastro de novos produtos com nome, descrição, quantidade e preço.</li>
+        <li>O sistema deve permitir a edição de informações de produtos existentes.</li>
+        <li>O sistema deve permitir a remoção de produtos do estoque.</li>
+        <li>O sistema deve exibir uma mensagem de sucesso após cada operação.</li>
+        <li>O sistema deve validar campos obrigatórios e exibir mensagens de erro.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>TA04.01 - Cadastro bem-sucedido com todos os dados preenchidos.</li>
+        <li>TA04.02 - Tentativa de cadastro com campos vazios retorna erro.</li>
+        <li>TA04.03 - Editar um produto existente com sucesso.</li>
+        <li>TA04.04 - Excluir um produto e verificar que ele não está mais no sistema.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12h</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">6 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Samuel</li>
+        <li><strong>Desenvolvedor:</strong> Samuel</li>
+        <li><strong>Revisor:</strong> Kaio</li>
+        <li><strong>Testador:</strong> Guilherme</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+-----
