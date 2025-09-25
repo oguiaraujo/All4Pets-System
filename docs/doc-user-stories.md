@@ -420,3 +420,84 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 </table>
 
 -----
+
+### User Story US06 - Manter Agendamento
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US06</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Gerenciar agendamentos de serviços</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US06 - Agendamento</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">
+      Como <em>Cliente ou Funcionário</em>, quero <em>agendar e cancelar serviços de banho e tosa e consultas pelo sistema</em>, para <em>ter mais conveniência e receber lembretes automáticos</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF06.01, RF06.01, RF06.01, RF06.01</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir a visualização de horários disponíveis.</li>
+        <li>O sistema deve permitir agendamento de serviços, selecionando data e horário.</li>
+        <li>O sistema deve enviar confirmação e lembretes de agendamento.</li>
+        <li>O sistema deve permitir o cancelamento do agendamento.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>TA06.01 - Agendar um serviço com sucesso.</li>
+        <li>TA06.02 - O sistema envia e-mail/notificação de confirmação.</li>
+        <li>TA06.03 - Cancelar um agendamento e verificar que ele foi removido do calendário.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">10h</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">13 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Samuel</li>
+        <li><strong>Desenvolvedor:</strong> Samuel</li>
+        <li><strong>Revisor:</strong> Guilherme</li>
+        <li><strong>Testador:</strong> Kaio</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+-----
