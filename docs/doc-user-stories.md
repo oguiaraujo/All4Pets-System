@@ -5,82 +5,6 @@
 
 Este documento descreve os User Stories criados a partir da Lista de Requisitos no [Plano de Automação - All4Pets](doc-visao.md)
 
-### User Story USXX - ________
-
-<table>
-  <tr>
-    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - USXX</th>
-  </tr>
-  <tr>
-    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
-    <td style="padding:6px;">Descrever funcionalidade resumidamente</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Identificação</strong></td>
-    <td style="padding:6px;">USXX - Nome Curto</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Story</strong></td>
-    <td style="padding:6px;">
-      Como <em>[tipo de usuário]</em>, quero <em>[ação desejada]</em>, para <em>[benefício/valor]</em>.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
-    <td style="padding:6px;">RF01, RF02...</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>O sistema deve exibir mensagem de sucesso após cadastro correto.</li>
-        <li>O sistema deve validar campos obrigatórios e exibir mensagens de erro.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>TA01.01 - Cadastro bem-sucedido com todos os dados preenchidos.</li>
-        <li>TA01.02 - Tentativa com campos vazios retorna erro.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Estimativa</strong></td>
-    <td style="padding:6px;">5h</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
-    <td style="padding:6px;">2h</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
-    <td style="padding:6px;">8 PF</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Prioridade</strong></td>
-    <td style="padding:6px;">Essencial / Importante / Opcional</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Responsáveis</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li><strong>Analista:</strong> Nome</li>
-        <li><strong>Desenvolvedor:</strong> Nome</li>
-        <li><strong>Revisor:</strong> Nome</li>
-        <li><strong>Testador:</strong> Nome</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Protótipo</strong></td>
-    <td style="padding:6px;">
-    </td>
-  </tr>
-</table>
-
 ---
 
 ### User Story US01 - Manter Cliente
@@ -253,6 +177,417 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ---
 
+### User Story US03 - Manter Funcionário
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US03</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Permitir o gerenciamento completo do cadastro de funcionários e seus perfis de acesso.</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US03 - Manter Funcionário</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">Como <em>Administrador</em>, quero <em>gerenciar os funcionários da clínica</em>, para <em>manter o quadro de pessoal atualizado e controlar o acesso ao sistema</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF03.01, RF03.02, RF03.03, RF03.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir o cadastro de um novo funcionário com Nome, Cargo/Função, E-mail e Senha.</li>
+<li>O sistema não deve permitir o cadastro de funcionários com o mesmo E-mail.</li>
+        <li>O sistema deve exibir uma lista de todos os funcionários ativos e seus respectivos cargos.</li>
+        <li>O sistema deve permitir a edição das informações de um funcionário, incluindo seu cargo e a redefinição de senha.</li>
+        <li>O sistema deve permitir a desativação de um funcionário, o que deve revogar seu acesso ao sistema.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>TA03.01:</strong> Inserir um novo funcionário com dados válidos e verificar se ele aparece na listagem.</li>
+        <li><strong>TA03.02:</strong> Tentar inserir um funcionário com um e-mail já existente e verificar se o sistema exibe uma mensagem de erro.</li>
+        <li><strong>TA03.03:</strong> Atualizar o cargo de um funcionário existente, salvar e confirmar a alteração na listagem.</li>
+        <li><strong>TA03.04:</strong> Desativar um funcionário e tentar fazer login com suas credenciais, verificando se o acesso é negado.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">10 Horas</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">5 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Kaio</li>
+        <li><strong>Desenvolvedor:</strong> Kaio</li>
+        <li><strong>Revisor:</strong> Guilherme</li>
+        <li><strong>Testador:</strong> Samuel</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+
+
+---
+
+### User Story US04 - Manter Produto
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US04</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Gerenciar produtos e estoque</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US04 - Gerenciar Produtos</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">
+      Como <em>Funcionário ou Administrador</em>, quero <em>cadastrar, editar e remover produtos no estoque</em>, para <em>manter o controle do inventário e evitar a falta de itens essenciais</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF04.01, RF04.02, RF04.03, RF04.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir o cadastro de novos produtos com nome, descrição, quantidade e preço.</li>
+        <li>O sistema deve permitir a edição de informações de produtos existentes.</li>
+        <li>O sistema deve permitir a remoção de produtos do estoque.</li>
+        <li>O sistema deve exibir uma mensagem de sucesso após cada operação.</li>
+        <li>O sistema deve validar campos obrigatórios e exibir mensagens de erro.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>TA04.01 - Cadastro bem-sucedido com todos os dados preenchidos.</li>
+        <li>TA04.02 - Tentativa de cadastro com campos vazios retorna erro.</li>
+        <li>TA04.03 - Editar um produto existente com sucesso.</li>
+        <li>TA04.04 - Excluir um produto e verificar que ele não está mais no sistema.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12h</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">6 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Samuel</li>
+        <li><strong>Desenvolvedor:</strong> Samuel</li>
+        <li><strong>Revisor:</strong> Kaio</li>
+        <li><strong>Testador:</strong> Guilherme</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+---
+
+### User Story US05 - Manter Serviço
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US05</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Permitir o gerenciamento do cadastro de serviços oferecidos pela clínica.</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US05 - Manter Serviço</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">Como <em>Administrador</em>, quero <em>gerenciar os serviços oferecidos pela clínica</em>, para <em>controlar a oferta de procedimentos e manter as informações de preço e duração atualizadas</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF05.01, RF05.02, RF05.03, RF05.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir o cadastro de um novo serviço com Nome, Descrição, Preço e Duração Estimada.</li>
+        <li>O sistema deve exibir uma lista com todos os serviços ativos.</li>
+        <li>O sistema deve permitir a edição de todas as informações de um serviço existente.</li>
+        <li>Ao desativar um serviço, ele não deve mais aparecer como uma opção para novos agendamentos.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>TA05.01:</strong> Inserir um novo serviço com dados válidos e verificar se ele aparece na listagem.</li>
+        <li><strong>TA05.02:</strong> Tentar inserir um serviço sem informar o Preço e verificar se o sistema exibe uma mensagem de erro.</li>
+        <li><strong>TA05.03:</strong> Atualizar o preço de um serviço e confirmar se o novo valor é refletido na listagem e na tela de agendamento.</li>
+        <li><strong>TA05.04:</strong> Desativar um serviço e verificar se ele não está mais disponível para novos agendamentos.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12 Horas</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">6 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Kaio</li>
+        <li><strong>Desenvolvedor:</strong> Kaio</li>
+        <li><strong>Revisor:</strong> Guilherme</li>
+        <li><strong>Testador:</strong> Samuel</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+---
+
+### User Story US06 - Manter Agendamento
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US06</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Gerenciar agendamentos de serviços</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US06 - Agendamento</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">
+      Como <em>Cliente ou Funcionário</em>, quero <em>agendar e cancelar serviços de banho e tosa e consultas pelo sistema</em>, para <em>ter mais conveniência e receber lembretes automáticos</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF06.01, RF06.01, RF06.01, RF06.01</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir a visualização de horários disponíveis.</li>
+        <li>O sistema deve permitir agendamento de serviços, selecionando data e horário.</li>
+        <li>O sistema deve enviar confirmação e lembretes de agendamento.</li>
+        <li>O sistema deve permitir o cancelamento do agendamento.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>TA06.01 - Agendar um serviço com sucesso.</li>
+        <li>TA06.02 - O sistema envia e-mail/notificação de confirmação.</li>
+        <li>TA06.03 - Cancelar um agendamento e verificar que ele foi removido do calendário.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">10h</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">5 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Samuel</li>
+        <li><strong>Desenvolvedor:</strong> Samuel</li>
+        <li><strong>Revisor:</strong> Guilherme</li>
+        <li><strong>Testador:</strong> Kaio</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+---
+
+### User Story US07 - Realizar Venda
+
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US07</th>
+  </tr>
+  <tr>
+    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
+    <td style="padding:6px;">Permitir o registro de vendas de produtos e serviços no ponto de venda (PDV).</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Identificação</strong></td>
+    <td style="padding:6px;">US07 - Realizar Venda</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Story</strong></td>
+    <td style="padding:6px;">Como <em>Funcionário</em>, quero <em>registrar vendas de produtos e serviços e processar pagamentos</em>, para <em>manter o controle financeiro da clínica e o estoque de produtos atualizado</em>.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
+    <td style="padding:6px;">RF07.01, RF07.02, RF07.03, RF07.04</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li>O sistema deve permitir a criação de uma nova venda, adicionando produtos e serviços a ela.</li>
+<li>Ao finalizar uma venda, o sistema deve atualizar a quantidade em estoque dos produtos vendidos.</li>
+        <li>O sistema deve permitir o registro de pagamentos para uma venda, suportando diferentes métodos (Pix, Cartão, Dinheiro).</li>
+<li>O sistema deve exibir o histórico de vendas, com opções de filtro por data e cliente.</li>
+        <li>O sistema deve permitir o cancelamento de uma venda não finalizada, revertendo a movimentação de estoque.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>TA07.01:</strong> Registrar uma venda com 2 produtos, processar o pagamento com Pix e verificar se a baixa no estoque foi realizada corretamente.</li>
+        <li><strong>TA07.02:</strong> Acessar o histórico de vendas, filtrar por um cliente específico e verificar se todas as suas compras são exibidas.</li>
+        <li><strong>TA07.03:</strong> Iniciar uma venda, adicionar 1 produto e, antes de finalizar, cancelar a operação, verificando se o estoque do produto não foi alterado.</li>
+        <li><strong>TA07.04:</strong> Registrar a venda de um serviço (sem produto) e processar o pagamento com cartão, verificando se a transação é registrada no histórico.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Estimativa</strong></td>
+    <td style="padding:6px;">12 Horas</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
+    <td style="padding:6px;"></td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
+    <td style="padding:6px;">6 PF</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Prioridade</strong></td>
+    <td style="padding:6px;">Essencial</td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Responsáveis</strong></td>
+    <td style="padding:6px;">
+      <ul>
+        <li><strong>Analista:</strong> Samuel</li>
+        <li><strong>Desenvolvedor:</strong> Samuel</li>
+        <li><strong>Revisor:</strong> Guilherme</li>
+        <li><strong>Testador:</strong> Kaio</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:6px;"><strong>Protótipo</strong></td>
+    <td style="padding:6px;">
+    </td>
+  </tr>
+</table>
+
+---
+
 ### User Story US08 - Autenticação de Usuário
 
 <table>
@@ -338,170 +673,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ---
 
-### User Story US04 - Manter Produto
-
-<table>
-  <tr>
-    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US04</th>
-  </tr>
-  <tr>
-    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
-    <td style="padding:6px;">Gerenciar produtos e estoque</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Identificação</strong></td>
-    <td style="padding:6px;">US04 - Gerenciar Produtos</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Story</strong></td>
-    <td style="padding:6px;">
-      Como <em>Funcionário ou Administrador</em>, quero <em>cadastrar, editar e remover produtos no estoque</em>, para <em>manter o controle do inventário e evitar a falta de itens essenciais</em>.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
-    <td style="padding:6px;">RF04.01, RF04.02, RF04.03, RF04.04</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>O sistema deve permitir o cadastro de novos produtos com nome, descrição, quantidade e preço.</li>
-        <li>O sistema deve permitir a edição de informações de produtos existentes.</li>
-        <li>O sistema deve permitir a remoção de produtos do estoque.</li>
-        <li>O sistema deve exibir uma mensagem de sucesso após cada operação.</li>
-        <li>O sistema deve validar campos obrigatórios e exibir mensagens de erro.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>TA04.01 - Cadastro bem-sucedido com todos os dados preenchidos.</li>
-        <li>TA04.02 - Tentativa de cadastro com campos vazios retorna erro.</li>
-        <li>TA04.03 - Editar um produto existente com sucesso.</li>
-        <li>TA04.04 - Excluir um produto e verificar que ele não está mais no sistema.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Estimativa</strong></td>
-    <td style="padding:6px;">12h</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
-    <td style="padding:6px;"></td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
-    <td style="padding:6px;">6 PF</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Prioridade</strong></td>
-    <td style="padding:6px;">Essencial</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Responsáveis</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li><strong>Analista:</strong> Samuel</li>
-        <li><strong>Desenvolvedor:</strong> Samuel</li>
-        <li><strong>Revisor:</strong> Kaio</li>
-        <li><strong>Testador:</strong> Guilherme</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Protótipo</strong></td>
-    <td style="padding:6px;">
-    </td>
-  </tr>
-</table>
-
------
-
-### User Story US06 - Manter Agendamento
-
-<table>
-  <tr>
-    <th colspan="2" style="text-align:left;background:#e0e0e0;padding:8px;">📌 User Story - US06</th>
-  </tr>
-  <tr>
-    <td style="width:25%;padding:6px;"><strong>Título</strong></td>
-    <td style="padding:6px;">Gerenciar agendamentos de serviços</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Identificação</strong></td>
-    <td style="padding:6px;">US06 - Agendamento</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Story</strong></td>
-    <td style="padding:6px;">
-      Como <em>Cliente ou Funcionário</em>, quero <em>agendar e cancelar serviços de banho e tosa e consultas pelo sistema</em>, para <em>ter mais conveniência e receber lembretes automáticos</em>.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Requisitos Relacionados</strong></td>
-    <td style="padding:6px;">RF06.01, RF06.01, RF06.01, RF06.01</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Critérios de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>O sistema deve permitir a visualização de horários disponíveis.</li>
-        <li>O sistema deve permitir agendamento de serviços, selecionando data e horário.</li>
-        <li>O sistema deve enviar confirmação e lembretes de agendamento.</li>
-        <li>O sistema deve permitir o cancelamento do agendamento.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Testes de Aceitação</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li>TA06.01 - Agendar um serviço com sucesso.</li>
-        <li>TA06.02 - O sistema envia e-mail/notificação de confirmação.</li>
-        <li>TA06.03 - Cancelar um agendamento e verificar que ele foi removido do calendário.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Estimativa</strong></td>
-    <td style="padding:6px;">10h</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tempo Real Gasto</strong></td>
-    <td style="padding:6px;"></td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Tamanho Funcional</strong></td>
-    <td style="padding:6px;">5 PF</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Prioridade</strong></td>
-    <td style="padding:6px;">Essencial</td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Responsáveis</strong></td>
-    <td style="padding:6px;">
-      <ul>
-        <li><strong>Analista:</strong> Samuel</li>
-        <li><strong>Desenvolvedor:</strong> Samuel</li>
-        <li><strong>Revisor:</strong> Guilherme</li>
-        <li><strong>Testador:</strong> Kaio</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:6px;"><strong>Protótipo</strong></td>
-    <td style="padding:6px;">
-    </td>
-  </tr>
-</table>
-
------
-
 ### User Story US09 - Gerar Relatórios
 
 <table>
@@ -581,3 +752,5 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
     </td>
   </tr>
 </table>
+
+---
