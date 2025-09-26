@@ -15,10 +15,10 @@ Um cliente representa o dono do pet. Um cliente tem: Nome Completo, CPF, Telefon
 
 Requisito | Descrição | Ator |
 --------- | ----------- | ---------- |
-RF01.01 - Inserir Cliente | Insere novo cliente informando: Nome, CPF, Telefone e E-mail. | Administrador, Funcionário |
-RF01.02 - Listar Clientes | Listagem dos clientes utilizando filtros por Nome e CPF. | Administrador, Funcionário |
-RF01.03 - Atualizar Cliente | Atualiza as informações de um cliente: Nome, Telefone, E-mail e Endereço. | Administrador, Funcionário |
-RF01.04 - Desativar Cliente | Desativa um cliente (exclusão lógica), mantendo seu histórico de transações. | Administrador, Funcionário |
+RF01.01 - Inserir Cliente | Insere novo cliente informando: Nome, CPF, Telefone e E-mail. | Funcionário, Cliente |
+RF01.02 - Listar Clientes | Listagem dos clientes utilizando filtros por Nome e CPF. | Funcionário |
+RF01.03 - Atualizar Cliente | Atualiza as informações de um cliente: Nome, Telefone, E-mail e Endereço. | Funcionário, Cliente |
+RF01.04 - Desativar Cliente | Desativa um cliente (exclusão lógica), mantendo seu histórico de transações. |Funcionário, Cliente |
 
 ---
 
@@ -52,7 +52,7 @@ Um produto é um item vendido no pet shop. Tem: Código, Nome, Descrição, Pre�
 Requisito | Descrição | Ator |
 --------- | ----------- | ---------- |
 RF04.01 - Inserir Produto | Insere novo produto informando: Código, Nome, Descrição, Preço, Estoque Inicial, Categoria e Data de Validade. | Administrador |
-RF04.02 - Listar Produtos | Listagem de produtos com filtros por Nome, Categoria, Data de Validade, Preço. | Administrador, Funcionário |
+RF04.02 - Listar Produtos | Listagem de produtos com filtros por Nome, Categoria, Data de Validade, Preço. | Funcionário |
 RF04.03 - Atualizar Produto | Atualiza as informações de um produto, incluindo o ajuste manual de estoque. | Administrador |
 RF04.04 - Desativar Produto | Desativa um produto, impedindo novas vendas mas mantendo o histórico. | Administrador |
 
@@ -64,7 +64,7 @@ Um serviço representa os procedimentos oferecidos pela clínica. Tem: Nome, Des
 Requisito | Descrição | Ator |
 --------- | ----------- | ---------- |
 RF05.01 - Inserir Serviço | Insere novo serviço (ex: Banho e Tosa, Consulta) informando: Nome, Descrição, Preço e Duração. | Administrador |
-RF05.02 - Listar Serviços | Listagem de todos os serviços oferecidos pela clínica. | Administrador, Funcionário |
+RF05.02 - Listar Serviços | Listagem de todos os serviços oferecidos pela clínica. | Funcionário |
 RF05.03 - Atualizar Serviço | Atualiza as informações de um serviço. | Administrador |
 RF05.04 - Desativar Serviço | Desativa um serviço, impedindo novos agendamentos. | Administrador |
 
@@ -88,9 +88,9 @@ Uma venda registra a transação financeira de produtos e/ou serviços.
 Requisito | Descrição | Ator |
 --------- | ----------- | ---------- |
 RF07.01 - Registrar Venda | Registra a venda de um ou mais produtos/serviços para um cliente, dando baixa no estoque. | Funcionário |
-RF07.02 - Listar Vendas | Listagem do histórico de vendas com filtros por data e cliente. | Administrador, Funcionário |
+RF07.02 - Listar Vendas | Listagem do histórico de vendas com filtros por data e cliente. | Funcionário |
 RF07.03 - Processar Pagamento | Registra o pagamento de uma venda, aceitando diferentes métodos como Pix e cartão. | Funcionário |
-RF07.04 - Cancelar Venda | Cancela uma venda não finalizada, estornando os itens para o estoque. | Administrador, Funcionário |
+RF07.04 - Cancelar Venda | Cancela uma venda não finalizada, estornando os itens para o estoque. | Funcionário |
 
 ---
 
