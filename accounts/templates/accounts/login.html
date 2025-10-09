@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Entrar</h2>
+<form method="post">{% csrf_token %}
+  {{ form.email.label_tag }} {{ form.username }}  <!-- LoginView usa field chamado 'username' que, com USERNAME_FIELD=email, renderiza e-mail -->
+  {{ form.password.label_tag }} {{ form.password }}
+  <button type="submit">Entrar</button>
+</form>
+<p><a href="{% url 'password_reset' %}">Esqueci minha senha</a></p>
+<p>Não tem conta? <a href="{% url 'signup' %}">Cadastre-se</a></p>
+{% endblock %}
