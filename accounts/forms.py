@@ -4,17 +4,17 @@ from .models import User
 class CustomUserCreationForm(UserCreationForm):
   class Meta:
     model = User
-    filds = ('email','first_name','last_name','cpf','telefone','role')
+    fields = ('email','first_name','last_name','cpf','telefone','role')
 
 class CustomUserChangeForm(UserChangeForm):
   class Meta:
     model = User
-    filds = ('email','first_name','last_name','cpf','telefone','role','isactive')
+    fields = ('email','first_name','last_name','cpf','telefone','role','isactive')
 
 class SignUpForm(UserCreationForm):
   class Meta:
     model = User
-    filds = ('email','first_name','last_name','cpf','telefone','password1','password2')
+    fields = ('email','first_name','last_name','cpf','telefone','password1','password2')
     
   def save(self, commit = True):
     user = super().save(commit = False)
