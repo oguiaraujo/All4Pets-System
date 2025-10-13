@@ -19,7 +19,6 @@ env/
 
 # Arquivos de mídia e estáticos (geralmente gerenciados em outro lugar)
 /media/
-/static/
 
 # Arquivos de sistema operacional
 .DS_Store
