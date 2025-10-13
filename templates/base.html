@@ -1,17 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>{% block title %}All4Pets{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
 </head>
 <body>
-  <header>
-    <h1>All4Pets</h1>
-  </header>
+  <div class="page-container">
+    <header>
+      <img src="{% static 'images/logo_clinica.png' %}" alt="Logo da Clínica" class="logo">
+    </header>
 
-  <main>
-    {% block content %}
-    {% endblock %}
-  </main>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+  </div>
 </body>
 </html>

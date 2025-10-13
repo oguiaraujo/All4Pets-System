@@ -1,10 +1,14 @@
 {% extends "base.html" %}
+{% block title %}Login - All4Pets{% endblock %}
 {% block content %}
-<h2>Entrar</h2>
+<h2>Entrar na sua conta</h2>
+<br>
+<p>E-mail:</p>
 <form method="post">{% csrf_token %}
   {{ form.email.label_tag }} {{ form.username }}  <!-- LoginView usa field chamado 'username' que, com USERNAME_FIELD=email, renderiza e-mail -->
   {{ form.password.label_tag }} {{ form.password }}
   <button type="submit">Entrar</button>
 </form>
+<br>
 <p>Não tem conta? <a href="{% url 'signup' %}">Cadastre-se</a></p>
 {% endblock %}
