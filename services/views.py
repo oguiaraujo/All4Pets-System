@@ -7,8 +7,13 @@ from .serializers import ServiceSerializer
 
 # Create your views here.
 class ServiceViewSet(viewsets.ModelViewSet):
-    queryset = Service.objects.all()
     serializer_class = ServiceSerializer
+    
+    def get_queryset(self):
+        if self.request.user.is_staff:
+            return Service.objects.all()
+        else:
+            return Service.objects.filter(status=True)
 
     def get_permissions(self):
         if self.action in ['list', 'retrieve']:
