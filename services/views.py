@@ -8,7 +8,8 @@ from .serializers import ServiceSerializer
 # Create your views here.
 class ServiceViewSet(viewsets.ModelViewSet):
     serializer_class = ServiceSerializer
-    
+    queryset = Service.objects.all()
+
     def get_queryset(self):
         if self.request.user.is_staff:
             return Service.objects.all()
