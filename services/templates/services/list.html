@@ -1,0 +1,169 @@
+<!-- templates/services/list.html -->
+{% extends "base2.html" %}
+{% block title %}Serviços - All4Pets{% endblock %}
+{% block content %}
+<div class="services-container">
+    <h1>Nossos Serviços</h1>
+    
+    <!-- Barra de busca em tempo real -->
+    <div class="search-form">
+        <input type="text" id="real-time-search" placeholder="Buscar serviço..." autocomplete="off">
+    </div>
+
+    <!-- Tabela de serviços -->
+    <div class="table-container">
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Nome do Serviço</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for service in services %}
+                <tr>
+                    <td class="service-name">{{ service.name }}</td>
+                    <td class="service-description">{{ service.description }}</td>
+                    <td class="service-price">R$ {{ service.price }}</td>
+                    <td class="service-duration">{{ service.duration }} min</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4" class="no-services">Nenhum serviço encontrado.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('real-time-search');
+    const serviceRows = document.querySelectorAll('.services-table tbody tr');
+    
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        
+        serviceRows.forEach(row => {
+            const serviceName = row.querySelector('.service-name').textContent.toLowerCase();
+            const serviceDescription = row.querySelector('.service-description').textContent.toLowerCase();
+            
+            if (serviceName.includes(searchTerm) || serviceDescription.includes(searchTerm)) {
+                row.style.display = '';
+                // Destacar o texto encontrado (opcional)
+                highlightText(row, searchTerm);
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+    
+    function highlightText(row, searchTerm) {
+        if (!searchTerm) return;
+        
+        const cells = row.querySelectorAll('td');
+        cells.forEach(cell => {
+            const originalText = cell.textContent;
+            const highlightedText = originalText.replace(
+                new RegExp(searchTerm, 'gi'),
+                match => `<span class="highlight">${match}</span>`
+            );
+            cell.innerHTML = highlightedText;
+        });
+    }
+});
+</script>
+
+<style>
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-form {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.services-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.services-table th {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #34495e;
+}
+
+.services-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.services-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.services-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.service-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.service-price {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.service-duration {
+    text-align: center;
+}
+
+.no-services {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 40px !important;
+}
+
+</style>
+{% endblock %}

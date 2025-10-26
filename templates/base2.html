@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}All4Pets{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .page-container {
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    
+    .logo {
+      width: 75px;
+      height: auto;
+      display: block;
+    }
+    
+    main {
+      margin-top: 10px;
+    }
+
+    header {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      height: 75px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <center>
+          <img src="{% static 'images/logo_clinica.png' %}" alt="Logo da Clínica" class="logo">
+    </center>
+  </header>
+
+  <div class="page-container" style="margin-top: 80px;">
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+  </div>
+</body>
+</html>
