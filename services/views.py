@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from rest_framework import viewsets
+from rest_framework import viewsets, status
+from rest_framework.response import Response
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from .models import Service
 from .serializers import ServiceSerializer
@@ -22,3 +23,10 @@ class ServiceViewSet(viewsets.ModelViewSet):
         else:
             permission_classes = [IsAdminUser]
         return [permission() for permission in permission_classes]
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.status = False
+        instance.save()
+
+        return Response(status=status.HTTP_204_NO_CONTENT)

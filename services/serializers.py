@@ -9,8 +9,6 @@ class ServiceSerializer(serializers.ModelSerializer):
         return price
 
     def validate_duration(self, duration):
-        print("🎯 VALIDATE_DURATION - VALUE:", duration)
-        print("🎯 VALIDATE_DURATION - TYPE:", type(duration))
         return duration
             
     class Meta:
