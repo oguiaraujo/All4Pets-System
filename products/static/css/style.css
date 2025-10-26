@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background-color: #006d6d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #017e7e;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #008c8c;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #00b3b3;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+a {
+    color: #00e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+button, .btn {
+    background-color: #009999;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #00bfbf;
+}
+
+.btn-edit {
+    background-color: #00cccc;
+}
+.btn-danger {
+    background-color: #cc0000;
+}
+.btn-secondary {
+    background-color: #008c8c;
+}
+
+.my-3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #017e7e;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background-color: #009999;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #028a8a;
+}
+
+tr:hover {
+    background-color: #00a3a3;
+    transition: background-color 0.2s;
+}
+
+#produtosTable td:last-child {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    color: #000;
+}
+
+form h2, form h3 {
+    color: #004d4d;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #555;
+    align-self: flex-start;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    color: #000;
+    transition: all 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border: 2px solid #00cccc;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 5px rgba(0, 204, 204, 0.5);
+}
+
+form button, .btn-form-submit {
+    width: 100%;
+    background-color: #00a3a3;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover, .btn-form-submit:hover {
+    background-color: #00bfbf;
+}
+
+
+input[type="text"] {
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 250px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #00cccc;
+}
+
+p, small {
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}

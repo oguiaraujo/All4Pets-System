@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Produtos</title>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'products/main.js' %}" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container"> 
+                {% if is_admin %}
+                    <a href="{% url 'products_create' %}" class="btn btn-primary">Novo Produto</a> 
+                    <a href="{% url 'products_inactive_list' %}" class="btn btn-primary">Restaura Produtos</a>
+                {% endif %}
+                <h2>Lista de Produtos</h2>
+                <input type="text" id="filterInput" placeholder="Filtrar por nome">
+                
+                <script>const IS_ADMIN = {{ is_admin|lower }};</script>
+                
+                <table id="produtosTable">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Estoque</th>
+                            <th>Data de Validade</th>
+                           {% if is_admin %}
+                            <th>Ações</th>  {% endif %}
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            
+            </div> </section>
+    </main>
+</body>
+</html>

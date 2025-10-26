@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Produto</title>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <script>
+        async function criarProduto(event) {
+            event.preventDefault();
+            
+            const formElement = document.getElementById("productForm");
+            const formData = new FormData(formElement);
+
+            const data = {
+                codigo: formData.get("codigo"),
+                nome: formData.get("nome"),
+                descricao: formData.get("descricao"),
+                preco: parseFloat(formData.get("preco")),
+                estoque: parseInt(formData.get("estoque")),
+                categoria: formData.get("categoria"),
+                data_validade: formData.get("data_validade")
+            };
+
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+            const response = await fetch("/api/products/", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": csrfToken 
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                alert("Produto criado com sucesso!");
+                window.location.href = "/products/";
+            } else {
+                const errorData = await response.json();
+                let errorMsg = "Erro ao criar produto. Detalhes:\n";
+                for (const field in errorData) {
+                    errorMsg += `${field}: ${errorData[field].join(', ')}\n`;
+                }
+                alert(errorMsg);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Criar Produto</h1>
+    <form id="productForm" onsubmit="criarProduto(event)">
+        {% csrf_token %}
+        
+        <label for="id_codigo">Código:</label>
+        <input type="text" name="codigo" id="codigo" required>
+        
+        <label for="id_nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label for="id_descricao">Descrição:</label>
+        <textarea name="descricao" id="descricao" rows="4"></textarea>
+
+        <label for="id_preco">Preço:</label>
+        <input type="number" step="0.01" name="preco" id="preco" required>
+        
+        <label for="id_estoque">Estoque:</label>
+        <input type="number" name="estoque" id="estoque" required>
+        
+        <label for="id_categoria">Categoria:</label>
+        <input type="text" name="categoria" id="categoria">
+
+        <label for="id_data_validade">Data Validade:</label>
+        <input type="date" name="data_validade" id="data_validade">
+
+        <button type="submit" class="btn-form-submit">Salvar Produto</button>
+    </form>
+    <a href="/products/">⬅ Voltar</a>
+</body>
+</html>

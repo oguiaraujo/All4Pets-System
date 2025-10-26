@@ -11,7 +11,7 @@ class CustomUserAdmin(UserAdmin):
   list_filter = ('role', 'is_active', 'is_staff','is_superuser')
   fieldsets = (
       (None, {'fields': ('email','password')}),
-      ('Informações pessoais', {'fields': ('first_name','last_name','cpf','telefone','cargo')}),
+      ('Informações pessoais', {'fields': ('first_name','last_name','cpf','telefone')}),
       ('Permissões', {'fields': ('is_active','is_staff','is_superuser','groups')}),
       ('Datas', {'fields': ('last_login','date_joined')})
   )

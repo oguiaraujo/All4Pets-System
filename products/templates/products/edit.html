@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Produto</title>
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <meta name="csrf-token" content="{{ csrf_token }}">
+    <script>
+        const produtoId = "{{ id }}";
+
+        async function carregarProduto() {
+            const response = await fetch(`/api/products/${produtoId}/`);
+            const produto = await response.json();
+            Object.keys(produto).forEach(key => {
+                const el = document.getElementById(key);
+                if (el) el.value = produto[key];
+            });
+        }
+
+        async function atualizarProduto(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const payload = {};
+
+            const readOnlyFields = ['id', 'criado_em', 'atualizado_em', 'ativo'];
+
+            for (let [key, value] of formData.entries()) {
+                if (!readOnlyFields.includes(key)) {
+                    let finalValue = value;
+
+                    if (key === 'preco' || key === 'estoque') {
+                        finalValue = parseFloat(finalValue);
+                    } else if (key === 'data_validade' && finalValue === '') {
+                        finalValue = null;
+                    }
+                    
+                    payload[key] = finalValue;
+                }
+            }
+
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+            const response = await fetch(`/api/products/${produtoId}/`, {
+            method: "PATCH",
+            headers: { 
+                "Content-Type": "application/json",
+                "X-CSRFToken": csrfToken
+            },
+            body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+                alert("Produto atualizado!");
+                window.location.href = "/products/";
+            } else {
+                const erro = await response.json();
+                alert("Erro ao atualizar produto: " + JSON.stringify(erro));
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", carregarProduto);
+    </script>
+</head>
+<body>
+    <h1>Editar Produto</h1>
+    <form onsubmit="atualizarProduto(event)">
+        <label>Código</label>
+        <input id="codigo" name="codigo" required>
+
+        <label>Nome</label>
+        <input id="nome" name="nome" required>
+
+        <label>Descrição</label>
+        <input id="descricao" name="descricao">
+
+        <label>Preço</label>
+        <input id="preco" name="preco" type="number" step="0.01" required>
+
+        <label>Estoque</label>
+        <input id="estoque" name="estoque" type="number" required>
+
+        <label>Categoria</label>
+        <input id="categoria" name="categoria">
+
+        <label>Data de Validade</label>
+        <input id="data_validade" name="data_validade" type="date">
+
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="/products/">Voltar</a>
+</body>
+</html>
