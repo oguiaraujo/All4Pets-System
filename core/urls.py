@@ -7,13 +7,14 @@ from services.views import ServiceViewSet
 from pets.views import PetViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
-router.register(r'services', ServiceViewSet)
+router.register(r'users', UserViewSet, basename='users')
+router.register(r'services', ServiceViewSet, basename='services')
 router.register(r'products', ProductsViewSet, basename='product')
-router.register(r'pets', PetViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
+    path("products/", include("products.urls")),
+    path("services/", include("services.urls")),
     path('api/', include(router.urls)),
 ]
