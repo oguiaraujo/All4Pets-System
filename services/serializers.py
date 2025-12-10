@@ -3,6 +3,8 @@ from .models import Service
 
 class ServiceSerializer(serializers.ModelSerializer):
 
+    price = serializers.FloatField()
+
     def validate_price(self, price):
         if price <= 0:
             raise serializers.ValidationError("O preço deve ser maior que zero")
