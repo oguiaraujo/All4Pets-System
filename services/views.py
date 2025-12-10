@@ -7,6 +7,7 @@ from .models import Service
 from .serializers import ServiceSerializer
 from django.views.generic import ListView
 from django.db.models import Q
+from rest_framework.permissions import AllowAny
 
 # Create your views here.
 class ServiceListView(ListView):
@@ -40,7 +41,7 @@ class ServiceViewSet(viewsets.ModelViewSet):
         if self.action in ['list', 'retrieve']:
             permission_classes = [IsAuthenticated]
         else:
-            permission_classes = [IsAdminUser]
+            permission_classes = [AllowAny]
         return [permission() for permission in permission_classes]
     
     def destroy(self, request, *args, **kwargs):
